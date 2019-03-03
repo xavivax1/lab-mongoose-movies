@@ -1,6 +1,6 @@
 'use strict';
 
-const Ceblebrity = require('../models/celebrity');
+const Celebrity = require('../models/celebrity');
 const mongoose = require('mongoose');
 
 const celebrities = [
@@ -29,7 +29,7 @@ mongoose.connect('mongodb://localhost/celebrities', {
   reconnectTries: Number.MAX_VALUE
 });
 
-Ceblebrity.insertMany(celebrities)
+Celebrity.insertMany(celebrities)
   .then(result => {
     console.log(result);
     mongoose.connection.close();
