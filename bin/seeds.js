@@ -23,7 +23,7 @@ const celebrities = [
 
 // const app = express();
 
-mongoose.connect('mongodb://localhost/cinema', {
+mongoose.connect('mongodb://localhost/celebrities', {
   keepAlive: true,
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE
